@@ -1,0 +1,33 @@
+GET http://localhost:3000/acronym?page=0&limit=3&search=
+
+###
+
+GET http://localhost:3000/acronym?page=0&limit=1&search=
+
+###
+
+GET http://localhost:3000/acronym?page=1&limit=1&search=
+
+###
+
+POST http://localhost:3000/acronym
+Content-Type: application/json
+
+{
+    "acronym": "ASAP",
+    "definition": "As Soon As Possible"
+}
+
+###
+
+DELETE http://localhost:3000/acronym/507f191e810c19729de860eb
+
+###
+
+PATCH http://localhost:3000/acronym/507f191e810c19729de860eb
+Content-Type: application/json
+
+{
+    "acronym": "OMG",
+    "definition": "Oh My God"
+}
